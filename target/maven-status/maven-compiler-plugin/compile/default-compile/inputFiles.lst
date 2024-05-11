@@ -1,0 +1,17 @@
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/repositories/IBasketRepository.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/repositories/IUserRepository.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/SpringSecurityConfig.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/models/User.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/controllers/UserController.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/services/BasketService.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/services/EmailService.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/repositories/ITypeRepository.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/models/Type.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/OpticApplication.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/repositories/IProductRepository.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/services/TypeService.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/services/ProductService.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/models/Product.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/models/Basket.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/services/CriteriaService.java
+/Users/ekaterinariadcikova/omgg/src/main/java/com/mirea/optic/services/UserService.java

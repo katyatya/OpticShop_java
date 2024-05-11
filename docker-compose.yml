@@ -1,11 +1,15 @@
 version: '3.9'
 
 services:
-  petshop:
+  optic:
     build: .
     ports:
       - "8080:8080"
-    networks: [ "microservices" ]
+    depends_on:
+      - postgres
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/postgres
+    networks: [ "micro" ]
 
   postgres:
     image: bitnami/postgresql
@@ -19,8 +23,8 @@ services:
     ports:
       - "20001:5432"
     restart: unless-stopped
-    networks: [ "microservices" ]
+    networks: [ "micro" ]
 
 networks:
-  microservices:
-    name: microservices
+  micro:
+    name: micro
