@@ -24,17 +24,16 @@ import java.util.*;
 public class UserController {
     private final TypeService typeService;
     private final ProductService productService;
-    private final CriteriaService criteriaService;
     private final UserService userService;
     private final EmailService emailService;
     private final BasketService basketService;
 
     private String addBasketStatus = "";
 
-    public UserController(TypeService typeService, ProductService productService, CriteriaService criteriaService, UserService userService, EmailService emailService, BasketService basketService) {
+    public UserController(TypeService typeService, ProductService productService,
+                          UserService userService, EmailService emailService, BasketService basketService) {
         this.typeService = typeService;
         this.productService = productService;
-        this.criteriaService = criteriaService;
         this.userService = userService;
         this.emailService = emailService;
         this.basketService = basketService;

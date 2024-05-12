@@ -22,11 +22,11 @@ public class EmailService {
         props.put("mail.smtp.port", "587");
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("smetannikov44ksenia@gmail.com", "89536698270");
+                return new PasswordAuthentication("katettet2@gmail.com", "1234");
             }
         });
         Message msg = new MimeMessage(session);
-        msg.setFrom(new InternetAddress("smetannikov44ksenia@gmail.com", false));
+        msg.setFrom(new InternetAddress("katettet2@gmail.com", false));
 
         msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email));
         msg.setSubject("Создание заказа");
