@@ -81,16 +81,6 @@ public class UserController {
         reloadAddBasketStatus();
         return "UserController/product";
     }
-    @GetMapping("/search")
-    public String searchProduct(@RequestParam(name ="name") String name,
-                                Model model, Authentication authentication){
-        String userRole = "USER";
-        if (authentication == null) userRole = "GUEST";
-        model.addAttribute("userRole", userRole);
-        model.addAttribute("types", typeService.getAllTypes());
-        model.addAttribute("products",criteriaService.getAllByName(name));
-        return "UserController/search";
-    }
     private String getUserRole(Authentication authentication) {
         if (authentication == null)
             return "GUEST";
@@ -218,7 +208,7 @@ public class UserController {
                              @RequestParam(name = "telephone") String telephone) throws MessagingException, IOException {
         User user = (User)userService.loadUserByUsername(authentication.getName());
         String userMessage = createMessageForUser(basketService.getBasketByUserId(user.getId()));
-//        emailService.sendmail(userMessage, user.getEmail());
+        //emailService.sendmail(userMessage, user.getEmail());
         basketService.deleteAllByUserId(user.getId());
         return "redirect:/basket";
     }

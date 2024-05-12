@@ -27,9 +27,9 @@
 	</head>
 	<body>
 		<nav
-			class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar"
+			class="navbar fixed-top navbar-expand-lg navbar-light light scrolling-navbar" style="background-color:#DCEFF9"
 		>
-			<div class="container">
+			<div class="container" >
 				<a href="/" class="navbar-brand waves-effect">
 					<strong class="blue-text"> Оптика </strong>
 				</a>
@@ -56,22 +56,6 @@
 								th:text="${type.getName()}"
 							></a>
 						</li>
-						<form
-							class="form-inline"
-							th:method="GET"
-							th:action="@{/search}"
-							style="margin-left: 30px"
-						>
-							<div class="md-form my-0">
-								<input
-									type="search"
-									class="form-control mr-sm-2"
-									placeholder="Поиск"
-									name="name"
-									aria-label="Поиск"
-								/>
-							</div>
-						</form>
 						<li class="nav-item" th:if="${userRole} == 'GUEST'">
 							<a href="/sign" class="nav-link waves-effect">Регистрация</a>
 						</li>
